@@ -18,7 +18,9 @@ public class ContagemPalavras {
     }
 
     public void removerPalavra(String palavra) {
-        contagemPalavrasMap.remove(palavra);
+        if(!contagemPalavrasMap.isEmpty()){
+            contagemPalavrasMap.remove(palavra);
+        }
     }
 
     public void exibirContagemPalavras() {
